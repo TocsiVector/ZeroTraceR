@@ -1,26 +1,39 @@
-# 🔍 ZeroTraceR — Advanced Linux Reconnaissance Tool
+# 🔍 ZeroTraceR
 
-ZeroTraceR is a production-focused Linux system reconnaissance tool designed for **post-exploitation enumeration**, **system auditing**, and **security analysis**.
+![Linux](https://img.shields.io/badge/Platform-Linux-blue)
+![Bash](https://img.shields.io/badge/Language-Bash-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Version](https://img.shields.io/badge/Version-1.0-red)
 
-It automates critical host-level information gathering and presents it in a structured, operator-friendly format.
-
----
-
-## ⚡ Features
-
-* 🖥️ OS & Kernel Detection
-* 👤 User & Privilege Enumeration
-* 📂 Full User Listing (getent / passwd fallback)
-* ⚙️ Running Process Analysis
-* 🌐 Open Port Detection (ss → netstat → lsof fallback)
-* 🔌 Network Interface Mapping
-* 📦 Installed Package Enumeration (multi-distro support)
-* ⚠️ Risk Indicators (root, sudo, suspicious ports)
-* 📄 Report Generation with optional file output
+> ⚡ Advanced Linux Reconnaissance Tool for Post-Exploitation & System Analysis
 
 ---
 
-## 🚀 Installation
+## 🚀 Overview
+
+ZeroTraceR is a lightweight yet powerful **Linux enumeration tool** designed for:
+
+* Post-exploitation reconnaissance
+* System auditing
+* Security analysis
+
+It automates system data collection and presents results in a clean, structured format.
+
+---
+
+## 🧰 Features
+
+* ✔ OS & Kernel Detection
+* ✔ User & Privilege Enumeration
+* ✔ Process & Service Discovery
+* ✔ Open Port Analysis (ss / netstat / lsof)
+* ✔ Network Interface Mapping
+* ✔ Installed Package Enumeration
+* ✔ Risk Indicators (root / sudo / exposed services)
+
+---
+
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/TocsiVector/ZeroTraceR.git
@@ -30,19 +43,19 @@ chmod +x system_recon.sh
 
 ---
 
-## 🧪 Usage
+## ▶️ Usage
 
 ```bash
 ./system_recon.sh
 ```
 
-### Save output to file:
+### Save Output
 
 ```bash
 ./system_recon.sh -o report.txt
 ```
 
-### Show help menu:
+### Help Menu
 
 ```bash
 ./system_recon.sh -h
@@ -50,48 +63,32 @@ chmod +x system_recon.sh
 
 ---
 
+## 📂 Examples
+
+Check the `examples/` directory for:
+
+* Basic usage commands
+* Sample output
+* Saved reports
+
+---
+
 ## 🧠 How It Works
 
-ZeroTraceR performs structured system enumeration across multiple layers:
+ZeroTraceR performs structured enumeration across:
 
-* System identity and OS details
-* User accounts and privilege context
-* Active processes and services
-* Open ports and network exposure
-* Installed software inventory
-
-All data is aggregated into a clean report for fast analysis.
-
----
-
-## ⚠️ Important Notes
-
-* Some features may require **root privileges** for full visibility
-* Designed for:
-
-  * Authorized penetration testing
-  * Cybersecurity labs (CTF, training)
-  * Internal system auditing
-
-🚫 Do NOT use on systems without permission.
+* System identity
+* Users & privileges
+* Running processes
+* Open ports and services
+* Network interfaces
+* Installed packages
 
 ---
 
-## 📁 Project Structure
+## 📊 Output Preview
 
-```
-ZeroTraceR/
-│── system_recon.sh
-│── README.md
-│── LICENSE
-
-```
-
----
-
-## 🔥 Example Output
-
-```
+```bash
 [OS DETAILS]
 Hostname: kali
 Kernel: 6.x.x
@@ -106,30 +103,25 @@ Privileges: standard user
 80/tcp  http
 
 [RISK]
-⚠ User has sudo privileges
+⚠ Sudo privileges detected
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## ⚠️ Requirements
 
-* Bash (POSIX Shell)
-* Native Linux utilities (ps, ss, netstat, ip, etc.)
+* Linux-based system
+* Bash shell
+* Root access (optional but recommended)
 
 ---
 
-## 📌 Roadmap
+## 🛠️ Roadmap
 
-* [ ] Privilege Escalation Detection Module
-* [ ] Automated Risk Scoring
+* [ ] Privilege Escalation Detection
+* [ ] Risk Scoring System
 * [ ] JSON Output Mode
-* [ ] Integration with other security tools
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome. For major changes, open an issue first.
+* [ ] Multi-tool Integration
 
 ---
 
@@ -145,6 +137,13 @@ MIT License
 
 ---
 
-## ⭐ Final Note
+## ⭐ Support
 
-This tool is built to bridge the gap between **manual enumeration** and **automated reconnaissance**, helping security practitioners move faster and smarter.
+If you find this project useful, give it a ⭐ on GitHub.
+
+---
+
+## ⚠️ Disclaimer
+
+This tool is intended for **educational purposes and authorized security testing only**.
+Do not use on systems without permission.
