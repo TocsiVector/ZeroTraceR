@@ -69,17 +69,6 @@ chmod +x system_recon.sh
 ```bash
 ./system_recon.sh -h
 ```
-
----
-
-## 📂 Examples
-
-The `examples/` directory includes:
-
-* Basic usage commands
-* Sample outputs
-* Saved reports
-
 ---
 
 ## 📊 Output Preview
