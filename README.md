@@ -1,23 +1,31 @@
-# 🔍 ZeroTraceR
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=00FF9C&size=35&center=true&vCenter=true&width=900&lines=ZeroTraceR+v3.0.1;Linux+Reconnaissance+Tool;Post-Exploitation+Automation" />
+</p>
 
-![Linux](https://img.shields.io/badge/Platform-Linux-blue)
-![Bash](https://img.shields.io/badge/Language-Bash-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-![Version](https://img.shields.io/badge/Version-1.0-red)
+<h1 align="center">🔍 ZeroTraceR</h1>
 
-> ⚡ Advanced Linux Reconnaissance Tool for Post-Exploitation & System Analysis
+<p align="center">
+Advanced Linux Reconnaissance Tool for Post-Exploitation & System Analysis
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Linux-blue"/>
+  <img src="https://img.shields.io/badge/Language-Bash-green"/>
+  <img src="https://img.shields.io/badge/Version-3.0.1-red"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow"/>
+</p>
 
 ---
 
 ## 🚀 Overview
 
-ZeroTraceR is a lightweight yet powerful **Linux enumeration tool** designed for:
+ZeroTraceR is a **lightweight yet powerful Linux enumeration tool** built for:
 
 * Post-exploitation reconnaissance
 * System auditing
 * Security analysis
 
-It automates system data collection and presents results in a clean, structured format.
+It automates system information gathering and presents results in a structured, operator-friendly format.
 
 ---
 
@@ -26,10 +34,11 @@ It automates system data collection and presents results in a clean, structured 
 * ✔ OS & Kernel Detection
 * ✔ User & Privilege Enumeration
 * ✔ Process & Service Discovery
-* ✔ Open Port Analysis (ss / netstat / lsof)
+* ✔ Open Port Analysis (ss / netstat / lsof fallback)
 * ✔ Network Interface Mapping
 * ✔ Installed Package Enumeration
 * ✔ Risk Indicators (root / sudo / exposed services)
+* ✔ Structured Output Reporting
 
 ---
 
@@ -65,24 +74,11 @@ chmod +x system_recon.sh
 
 ## 📂 Examples
 
-Check the `examples/` directory for:
+The `examples/` directory includes:
 
 * Basic usage commands
-* Sample output
+* Sample outputs
 * Saved reports
-
----
-
-## 🧠 How It Works
-
-ZeroTraceR performs structured enumeration across:
-
-* System identity
-* Users & privileges
-* Running processes
-* Open ports and services
-* Network interfaces
-* Installed packages
 
 ---
 
@@ -112,7 +108,7 @@ Privileges: standard user
 
 * Linux-based system
 * Bash shell
-* Root access (optional but recommended)
+* Root access (recommended for full visibility)
 
 ---
 
