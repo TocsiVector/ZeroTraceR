@@ -118,7 +118,7 @@ MIT License
 
 ## 👤 Author
 
-**TocsiVector**
+**TocsiVector**   
 
 ---
 
