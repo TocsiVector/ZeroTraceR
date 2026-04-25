@@ -84,8 +84,7 @@ ZeroTraceR/
 │── system_recon.sh
 │── README.md
 │── LICENSE
-│── examples/
-│── output/
+
 ```
 
 ---
